@@ -24,6 +24,13 @@ public abstract class BaseDisc implements OpticalDisc{
       this.speedMax = speedMax;
    }
 
+   public BaseDisc(String name, Type type, int speedMin, int speedMax) {
+      this.name = name;
+      this.type = type;
+      this.speedMin = speedMin;
+      this.speedMax = speedMax;
+   }
+
    public static int getCounter() {
       return counter;
    }
@@ -63,17 +70,8 @@ public abstract class BaseDisc implements OpticalDisc{
    }
 
    @Override
-   public void storeData(String str) {
-      List<String> contents = getContent();
-      contents.add(str+"\n");
-      contents.forEach(System.out::print);
-
-   }
-
-   @Override
    public void readData() {
       getContent().forEach(System.out::print);
-     // System.out.println();
    }
 
    @Override

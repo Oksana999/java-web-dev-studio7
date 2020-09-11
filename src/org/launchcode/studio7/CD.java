@@ -19,13 +19,13 @@ public class CD extends BaseDisc implements OpticalDisc{
 //
 //   }
 //
-//   @Override
-//   public void storeData(String str) {
-//      List<String> contents = super.getContent();
-//      contents.add(str+"\n");
-//     contents.forEach(System.out::print);
-//
-//   }
+   @Override
+   public void storeData(String str) {
+      List<String> contents = super.getContent();
+      contents.add(str+"\n");
+     contents.forEach(System.out::print);
+
+   }
 
 //   @Override
 //   public void readData() {

@@ -18,12 +18,12 @@ public class DVD extends BaseDisc implements OpticalDisc{
 //      System.out.println("Disc spinning with speed = "+ speed);
 //   }
 //
-//   @Override
-//   public void storeData(String str) {
-//      List<String> contents = super.getContent();
-//      contents.add(str+"\n");
-//      contents.forEach(System.out::print);
-//   }
+   @Override
+   public void storeData(String str) {
+      List<String> contents = super.getContent();
+      contents.add(str+"\n");
+      contents.forEach(System.out::print);
+   }
 //
 //   @Override
 //   public void readData() {

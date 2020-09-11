@@ -9,13 +9,24 @@ public class Main {
 
         // TODO: Declare and initialize a CD and a DVD object.
         ArrayList<String> content1 = new ArrayList<>();
+        ArrayList<String> content2 = new ArrayList<>();
+        ArrayList<String> content3 = new ArrayList<>();
         content1.add("Music of silence, ");
-        content1.add("Moonlight Sonata ");
+        content1.add("Moonlight Sonata, ");
+        content2.add("Soul song, ");
+        content2.add("Felicita, ");
+        content3.add("Gray night, ");
+        content3.add("Fantastic, ");
         BaseDisc myCd = new CD("cd", 100, Type.CD, 200, 500, content1);
-        BaseDisc myDvd = new DVD("dvd", 200, Type.DVD, 570, 1600, content1);
+        BaseDisc myDvd = new DVD("dvd", 200, Type.DVD, 570, 1600, content2);
+        BaseDisc myLp = new LP("lp", 50, Type.LP, 100, 120, content3);
+        BaseDisc myWheel = new Wheel("wheel", Type.WHEEL, 150, 300);
         List<BaseDisc> discs = new ArrayList<>();
         discs.add(myCd);
         discs.add(myDvd);
+        discs.add(myLp);
+        discs.add(myWheel);
+
 
 
         // TODO: Call each CD and DVD method to verify that they work as expected.
